@@ -13,6 +13,8 @@ exports.save = (req, res) => {
     const num_m2 = req.body.num_m2
     const email = req.body.email
 
+    console.log(nombre +" - "+ apellido +" - "+ fecha_nac +" - "+ peso +" - "+ altura +" - "+ domicilio +" - "+ cod_postal +" - "+ num_m1 +" - "+ num_m2  +" - "+ email)
+
     conexion.query('INSERT INTO clientes SET ?', {nombre_cliente:nombre, apellido_cliente:apellido, fecha_nac_cliente:fecha_nac, peso_cliente:peso, altura_cliente:altura, domicilio_cliente:domicilio, cod_postal:cod_postal, movil01_cliente:num_m1, movil02_cliente:num_m2, email_cliente:email}, (error, data) => {
         if(error){
             console.log(error)
