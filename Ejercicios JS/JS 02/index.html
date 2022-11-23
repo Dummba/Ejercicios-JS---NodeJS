@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>JavaScript - Class 02</title>
+        <script src="functions.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div style="text-align: center;" class="box">
+            <label><h1>Empleados</h1><br></label>
+                    <div style="text-align: center;">
+                    <label for="e3"><h3>Ingresar Registro</h3></label>
+                    <p> Nombre <input type="text" id="c1"  class="btn"> </p>
+                    <p> Año <input type="number" id="c2"  class="btn">
+                    <p> Direccion <input type="text" id="c3"  class="btn"> <br>
+                    <input type="button" id="e3" onclick="CustomEmpleado()" value="Agregar" class="btn">
+                    </div>
+            <br>
+            <table id="tablaM" style="text-align: center; margin: 0 auto; border: 1px solid;" >
+                <tr>
+                    <td width="25%"><label><b>Nombre</b></label></td>
+                    <td width="35%"><label><b>Año De Incorporación</b></label></td>
+                    <td width="40%"><label><b>Direccion</b></label></td>
+                </tr>
+            </table>
+            <br><label><h1 style="font-size:50px" id="answer"></h1></label>
+        </div>
+    </body>
+</html>
